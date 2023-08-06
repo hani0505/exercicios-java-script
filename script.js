@@ -38,3 +38,30 @@ function idade() {
 }
 
 
+
+
+
+function verificarAprovacao() {
+    var notaProva = parseFloat(document.getElementById("notaProva").value);
+    var notaTrabalho = parseFloat(document.getElementById("notaTrabalho").value);
+    var numeroFaltas = parseInt(document.getElementById("numeroFaltas").value);
+
+    var notaFinal = (notaProva + notaTrabalho) / 2;
+
+    var resultadoAprovacao;
+    if (notaProva >= 7 && notaTrabalho >= 6 && numeroFaltas <= 10) {
+        resultadoAprovacao = "Aluno Aprovado!";
+
+        
+    } else {
+        resultadoAprovacao = "Aluno Reprovado!"
+    }
+
+    document.getElementById("resultado").textContent = resultadoAprovacao;
+}
+
+
+
+
+
+
