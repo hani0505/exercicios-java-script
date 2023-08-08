@@ -25,23 +25,50 @@
         <h1>Descobrimos sua idade</h1>
         <button onclick="idade()">Clique aqui</button>
         
-
+        <div class="div">
     <h1>Verificação de Aprovação</h1>
 
         <label for="notaProva">Nota da prova:</label>
         <input type="number" id="notaProva" step="0.1">
+        <br>
+        <br>
 
         <label for="notaTrabalho">Nota do trabalho:</label>
         <input type="number" id="notaTrabalho" step="0.1">
+        <br>
+        <br>
 
         <label for="numeroFaltas">Número de faltas:</label>
         <input type="number" id="numeroFaltas">
+        <br>
+        <br>
+
 
         <button onclick="verificarAprovacao()">Verificar</button>
 
         <!-- Campo para exibir o resultado da aprovação -->
         <p id="resultado"></p>
+        </div>
 
+    <hr>
+    <div class="div">
+     <h1>Modelo Honda</h1>   
+        <label for="modeloInput">Digite o modelo da marca Honda:</label>
+        <input type="text" id="modeloInput">
+        <button onclick="verificarModeloHonda()">Verificar</button>
+    </div>
+
+    <h1>Calculadora de Potência</h1>
+
+    <label for="numeroBase">Digite o número base:</label>
+    <input type="number" id="numeroBase">
+
+    <label for="expoente">Digite o expoente:</label>
+    <input type="number" id="expoente">
+
+    <button onclick="calcularPotencia()">Calcular</button>
+
+    <p id="resultadoEx"></p>
 
     <script src="script.js"></script>
 </body>

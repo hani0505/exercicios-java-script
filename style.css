@@ -3,3 +3,25 @@
 body { font: 12pt Arial; }
 h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
 button { font-size: 12pt; padding: 30px; }
+
+
+label,input{
+    height: 100px;
+    font-size: 40px;
+}
+
+div{
+  
+    display: grid;
+    text-align: center;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+
+}
+
+#modeloInput{
+    height: 30px;
+    font-size: 40px;
+}

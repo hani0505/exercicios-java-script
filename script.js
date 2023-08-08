@@ -60,6 +60,35 @@ function verificarAprovacao() {
     document.getElementById("resultado").textContent = resultadoAprovacao;
 }
 
+function verificarModeloHonda() {
+    var modelo = document.getElementById("modeloInput").value.toLowerCase();
+    switch (modelo) {
+        case "civic":
+        case "city":
+        case "motos hondas":
+            alert("esse é um modelo Honda")
+            
+            break;
+    
+        default:
+            alert("não encontramos esse modelo, digite novamente!")
+            break;
+    }
+}
+
+
+function calcularPotencia() {
+    var numeroBase = parseFloat(document.getElementById("numeroBase").value);
+    var expoente = parseInt(document.getElementById("expoente").value);
+
+    var resultado = Math.pow(numeroBase, expoente);
+
+    var resultadoElemento = document.getElementById("resultadoEx");
+    resultadoElemento.textContent = "Resultado: " + resultado;
+}
+
+
+
 
 
 
