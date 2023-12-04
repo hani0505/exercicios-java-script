@@ -88,9 +88,25 @@ function calcularPotencia() {
 }
 
 
+document.getElementById("Md").innerHTML = 'isso foi feito com'
+document.getElementById("Pa").innerHTML = 'manipulação de DOOM'
 
 
+function mudarCor(cor) {
+    var elemento = document.getElementById("para1");
+    elemento.style.color = cor
+}
 
 
+document.getElementById('i1').style.width = '30%'
+document.getElementById('i2').style.float = 'left'
+document.getElementById('i2').style.width = '30%'
 
+var album = {
+    nome: "bruce weyne",
+    heroi: "batman",
 
+    
+
+}
+console.log("esse é o: " + album.nome + " que faz o herói: " + album.heroi)
