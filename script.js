@@ -5,7 +5,7 @@ alert(`prazer, ${nome} , aqui é um site total interarivo`)
 
 function teste() {
     let num = Number(window.prompt('qual seu número?'))
-    let tipo
+    let tipo = ""
     if (num % 2 == 0) {
         tipo = '<strong>PAR</strong>'
     } else {
@@ -33,8 +33,9 @@ function zerar() {
 
 function idade() {
     let dado = Number(window.prompt('digite o ano que você nasceu'))
-    let res = 2023 - dado
-    alert(`você tem ${res} anos`)
+    let res = new Date().getFullYear() 
+    let ano =  res - dado;
+    alert(`você tem ${ano} anos`)
 }
 
 
@@ -102,6 +103,7 @@ document.getElementById('i1').style.width = '30%'
 document.getElementById('i2').style.float = 'left'
 document.getElementById('i2').style.width = '30%'
 
+function mostrarBanda() {
 var album = {
     nome: "bruce weyne",
     heroi: "batman",
@@ -110,3 +112,4 @@ var album = {
 
 }
 console.log("esse é o: " + album.nome + " que faz o herói: " + album.heroi)
+}
